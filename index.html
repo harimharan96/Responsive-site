@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Shoe store</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/5499/5499206.png" alt="logo" width="50">
+            <h1>ShoeStore</h1>
+        </div>
+        <div class="menu">
+
+            <a href="./index.html">Home</a>
+            <a href="#">Form</a>
+            <a href="#">Contact</a>
+
+        </div>
+        <div class="hamBurger">
+            <button onclick="myFunction()">Dropdown</button>
+        </div>
+        <div class="myLinks" id="myLinks">
+            <a href="./index.html">Home</a>
+            <a href="#">Form</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>

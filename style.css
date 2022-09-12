@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav {
+    background-color: aliceblue;
+    display: flex;
+    height: 20%;
+}
+
+.logo {
+    display: flex;
+    height: 100%;
+    width: 15%;
+    align-items: center;
+
+}
+
+.logo h1 {
+    margin: 5px;
+}
+
+.menu {
+    position: absolute;
+    margin-left: 230px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 10px 20px;
+}
+
+.hamBurger {
+    display: none;
+    right: 0;
+    position: absolute;
+    margin: 5px;
+}
+.hamBurger button{
+    height: 40px;
+}
+.myLinks{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hamBurger {
+        display: block;
+    }
+        
+    .menu {
+        display: none;
+    }
+    .myLinks{
+        position: absolute;
+        right: 0;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+    }
+    .myLinks a{
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+}
