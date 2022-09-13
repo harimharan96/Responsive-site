@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    scroll-behavior: smooth;
 }
 
 .nav {
@@ -48,8 +50,53 @@
 .myLinks{
     display: none;
 }
-
-
+.container1{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.side-list{
+    padding: 20px;
+    max-width: 10%;
+}
+.side-list>p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.side-list ul{
+    list-style-type: none;
+    padding-left: 20px;
+    
+}
+.side-list ul li{
+    padding: 5px 0;
+}
+.side-list ul li a{
+    color: black;
+}
+.banner{
+    width: 90%;
+}
+.banner h1{
+    font-size: 1000%;
+}
+.men-box{
+    margin: 40px;
+}
+.men-box h2{
+    margin: 10px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+.card-img img{
+    width: 200px;
+    height: auto;
+}
 @media only screen and (max-width: 768px) {
     .hamBurger {
         display: block;
