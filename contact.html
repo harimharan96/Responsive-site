@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/5499/5499206.png" alt="logo" width="50">
+            <p>ShoeStore</p>
+        </div>
+        <div class="menu">
+
+            <a href="./index.html">Home</a>
+            <a href="./form.html">Form</a>
+            <a href="./contact.html">Contact</a>
+
+        </div>
+        <div class="hamBurger">
+            <button onclick="myFunction()">Dropdown</button>
+        </div>
+        <div class="myLinks" id="myLinks">
+            <a href="./index.html">Home</a>
+            <a href="./form.html">Form</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="mx-auto my-5 w-50 border border-5 pb-5">
+        <table class="table text-center">
+            <h2 class="m-5">Contact Us</h2>
+            <tbody>
+              <tr>
+                <td>Email</td>
+                <td>support@shoestore.com</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>HSR layout, Bengaluru, Karnataka</td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td>+91987654321</td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>
