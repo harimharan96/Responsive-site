@@ -4,9 +4,15 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* background-color: rgba(0, 0, 0, 0.1); */
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
-
+body{
+    background-color: rgb(251, 239, 224);
+}
 .nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
     background-color: aliceblue;
     display: flex;
     height: 20%;
@@ -59,6 +65,7 @@
     display: flex;
     align-items: center;
     margin-top: 20px;
+    
 }
 
 .side-list {
@@ -98,6 +105,8 @@
 .men-box {
     margin: 40px;
     border: 2px solid grey;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 10px;
 }
 
 .men-box h2 {
@@ -109,15 +118,22 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px 0;
+    margin: 50px 0;
 }
 
 .card-container {
     border: 2px solid grey;
+    border-radius: 10px;
+
+}
+.card-container:hover {
+    box-shadow: 10px 10px 10px;
+    transform: translate(-5px, -5px);
 }
 
 .card-img img {
     width: 200px;
+    border-radius: 10px 10px 0;
     height: auto;
 }
 
@@ -137,6 +153,9 @@ td{
 fieldset{
     padding: 10px;
 }
+.border-5{
+    min-width: 500px;
+}
 
 @media only screen and (max-width: 768px) {
     .hamBurger {
@@ -154,6 +173,7 @@ fieldset{
         display: none;
         flex-direction: column;
         background-color: aliceblue;
+        z-index: 5;
     }
 
     .myLinks a {
